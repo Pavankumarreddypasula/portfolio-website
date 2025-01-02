@@ -1,0 +1,81 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.branding {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.social-links {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+
+.content h1 {
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.availability {
+    margin-top: 2rem;
+}
+.availability-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+.availability-toggle {
+    display: inline-block;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.availability-toggle:hover {
+    background-color: white;
+    color: black;
+}

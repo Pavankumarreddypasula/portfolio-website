@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .text-content {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .image-content {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .image-content img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        h1, h2, h3, h4 {
+            color: hsl(0, 0%, 100%);
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        h2, h3, h4 {
+            font-size: 2em;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        .availability {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .availability-toggle {
+            display: inline-block;
+            text-align: center;
+            background-color: black;
+            color: white;
+            border: 2px solid white;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .availability-toggle:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .additional-image {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .additional-image img {
+            max-width: 150%;
+            border-radius: 10px;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Here are my educational qualifications.</h1>
+
+        <div class="section">
+            <div class="text-content">
+                <h2>Schooling:</h2>
+                <ul>
+                    <li>Candor Shrine i Sr. Secondary School, Hyderabad</li>
+                    <li>CBSE</li>
+                    <li>Percentage: 78.8%</li>
+                    <li>Passed out: 2019</li>
+                </ul>
+            </div>
+            <div class="image-content">
+                <img src="school.jpeg" alt="Schooling Image">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="image-content">
+                <img src="narayana.jpeg" alt="Intermediate Image">
+            </div>
+            <div class="text-content">
+                <h3>Intermediate/12:</h3>
+                <ul>
+                    <li>Narayana Junior College, Hyderabad</li>
+                    <li>Telangana Board</li>
+                    <li>Percentage: 90.4%</li>
+                    <li>Passed out: 2021</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="text-content">
+                <h4>Under Graduation:</h4>
+                <ul>
+                    <li>Vidya Jyothi Institute of Technology, Hyderabad</li>
+                    <li>JNTU Affiliated Autonomous</li>
+                    <li>Percentage: 7.85</li>
+                    <li>Passing out in: 2025</li>
+                </ul>
+            </div>
+            <div class="image-content">
+                <img src="vjitlogo.png" alt="Under Graduation Image">
+            </div>
+        </div>
+
+        <div class="additional-image">
+            <img src="vjit.jpeg" alt="Additional Under Graduation Image">
+        </div>
+
+        <div class="availability">
+            <a href="HTML.html" class="availability-toggle">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>

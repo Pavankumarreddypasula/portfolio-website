@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #000;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 50px;
+        }
+
+        .projects-container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            max-width: 1500px;
+        }
+
+        .project {
+            position: relative;
+            width: 48%;
+            height: 350px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .project img {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        .popup {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            font-size: 1rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .project:hover .popup {
+            opacity: 1;
+        }
+
+        .popup h3 {
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .popup p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+
+        .project-name {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Projects</h1>
+
+    <div class="projects-container">
+        <!-- Project 1 -->
+        <a href="parking.html" class="project">
+            <img src="parking1.png" alt="Project 1">
+            <div class="popup">
+                <h3>Project 1 Title</h3>
+                <p>Parking Slot detection Done a real time project where it automatically detects the parking slot and gives the no
+                    of parking slot are empty andempty slots numbers.These are connect to web application where it shows dynamicals
+                    we can book aslot and print arecipt.Opencv and Flask is used in this project.</p>
+            </div>
+            <div class="project-name">Parking Slot Detection</div>
+        </a>
+
+        <!-- Project 2 -->
+        <a href="chatbot.html" class="project">
+            <img src="chat1.png" alt="Project 2">
+            <div class="popup">
+                <h3>Project 2 Title</h3>
+                <p>This project is a chatbot application built using Streamlit and Google Gemini (a generative AI model from Google). The purpose of the app is to allow users to input a question, send it to the Google Gemini model, and receive a response, which is then displayed in the Web app.</p>
+            </div>
+            <div class="project-name">ChatBot</div>
+        </a>
+    </div>
+
+</body>
+</html>

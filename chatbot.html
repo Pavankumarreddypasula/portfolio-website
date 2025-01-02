@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Project</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            padding: 50px;
+            position: relative;
+            flex: 1; /* Ensure it takes up available space */
+        }
+
+        /* Left-aligned header */
+        .heading {
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        /* Image at the center below the heading */
+        .project-image {
+            display: block;
+            width: 60%;
+            margin: 20px auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .project-image:hover {
+            transform: scale(1.1); /* Slightly enlarge the image */
+            cursor: pointer; /* Change cursor to pointer to indicate interaction */
+        }
+
+        /* The project description in a container */
+        .description-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 10px;
+        }
+
+        .description-container p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        /* Images container for bottom images */
+        .images-container {
+            display: flex;
+            justify-content: center; /* Centers the images horizontally */
+            gap: 30px; /* Adds space between images */
+            padding: 40px 0;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Hover effect for the container */
+        .images-container:hover {
+            transform: translateY(-10px); /* Slightly lift the container */
+        }
+
+        /* Style for images in the bottom container */
+        .bottom-image {
+            width: 500px; /* Makes the images larger */
+            height: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out; /* Smooth transition */
+        }
+
+        /* Hover effect for images */
+        .bottom-image:hover {
+            transform: scale(1.1); /* Slightly enlarge the image */
+            cursor: pointer; /* Change cursor to pointer to indicate interaction */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Project Heading -->
+        <div class="heading">Chatbot:</div>
+
+        <!-- Main project image -->
+        <img src="chat1.png" alt="Project Image" class="project-image">
+
+        <!-- Project Description -->
+        <div class="description-container">
+            <p>This project is a chatbot application built using Streamlit and Google Gemini (a generative AI model from Google). The purpose of the app is to allow users to input a question, send it to the Google Gemini model, and receive a response, which is then displayed in the app. The application maintains the conversation history so that users can view both their input and the AI's responses. The code starts by loading environment variables using <code>load_dotenv()</code>, which stores the Google Gemini API key securely in a <code>.env</code> file. This API key is then used to configure the Google Gemini API using the <code>google.generativeai</code> module.</p>
+
+            <p>The user interface (UI) is created using Streamlit, where the app header is set to "Gemini LLM Application". Users are provided with a text input field where they can type their questions, and once the question is submitted, the application sends it to the Gemini model. The model, specifically the <code>gemini-1.5-flash</code> version, generates a response, which is then displayed in the app. The chat history is maintained in the session state, allowing users to see the entire conversation history (both their own inputs and the AI's outputs).</p>
+
+            <p>The main function <code>get_gemini_response()</code> interacts with the Google Gemini model to generate responses. When a user submits a question, the model processes the input and returns a response, which is streamed back in real-time. The chatbot supports multiple interactions in one session, preserving the history of the conversation. The application layout is flexible, with the chat history being displayed below the input field, and each interaction is dynamically updated.</p>
+
+            <p>This chatbot could be customized for various domains, such as providing advice on applicant tracking systems (ATS), resume writing, or other professional topics. Additionally, it could be used for general Q&A applications, where users ask questions on a wide range of topics. To run this app, you need to have Python installed, along with the necessary libraries such as Streamlit, <code>google-generativeai</code>, and <code>python-dotenv</code>. You will also need to store your Google API key in a <code>.env</code> file for secure access. Once the app is set up, it can be run locally using the <code>streamlit run</code> command.</p>
+
+            <p>Overall, this chatbot application serves as a foundation for building more specialized AI-driven applications that can answer user queries dynamically and maintain a persistent conversation history.</p>
+        </div>
+
+    </div>
+
+    <!-- Images container at the bottom -->
+    <div class="images-container">
+        <img src="chat2.png" alt="Left Image" class="bottom-image">
+        <img src="chat3.png" alt="Right Image" class="bottom-image">
+    </div>
+
+</body>
+</html>
